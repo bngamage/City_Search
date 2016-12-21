@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		  <title>City Search</title>
+		  <link rel="stylesheet" type="text/css" href="search.css">
+            <link rel="icon" type="image/png" href="car.png" />
+<!--            setting the url encoding type-->
+            <meta charset="UTF-8">
+
+            <script src = "https://code.jquery.com/jquery-3.1.1.min.js"></script>
+           <!--These are imported from additional source-->
+           <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+               rel = "stylesheet">
+           <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+           <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+           <script src = "js.cookie.js"></script>
+           <script src = "search.js"></script>
+        <style>
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+</style>
+            
+	</head>
+<body background="bg.jpg">
+		<h1 id="heading">CitySearch</h1>
+
+		<form id="form" >
+		  
+              <div class="ui-widget">
+          <input id="tags" type="text">
+              </div>
+            <button type="button" id="btnSubmit" class="button">Go!</button>
+<!--		  <input type="submit" value="Go!">-->
+		</form>
+         <div id="result"></div>
+
+	</body>
+</html>

@@ -1,0 +1,2 @@
+The exercise was quite interesting and a real time scenario. We faced difficulties for the test cases with special characters as inputs were conflicting with check styles in jenkins server. We had to change the build.xml as per tutors instructions to encode code to UTF-8.
+Otherwise exercise sheet was quite good and worthy. We have tried our best to make web app look good and tried to implement all functionalities as mentioned.

@@ -1,0 +1,67 @@
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('PT Sans'), local('PTSans-Regular'), url(https://fonts.gstatic.com/s/ptsans/v8/9kaD4V2pNPMMeUVBHayd7vY6323mHUZFJMgTvxaG2iE.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('PT Sans'), local('PTSans-Regular'), url(https://fonts.gstatic.com/s/ptsans/v8/ATKpv8nLYAKUYexo8iqqrg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+body {
+     width: 500px;
+     margin: 0 auto;
+     font-family: 'PT Sans', sans-serif;
+}
+
+h1 {
+	text-align: center;
+	margin-top: 1.3em;
+	letter-spacing: 2px;
+	border-bottom: solid 1px #ccc;
+	padding-bottom: 0.7em;
+	margin-left: 3em;
+	margin-right: 3em;
+}
+
+form {
+	margin-top: 4em;
+}
+
+input[type=text] {
+    font-size: 1.6em;
+    width: 80%;
+    margin: 14px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 3px #ddd;
+    border-radius: 6px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    float: left;
+}
+
+input[type=submit] {
+    font-size: 1.2em;
+    width: 18%;
+    text-align: center;
+    background-color: rgba(100, 137, 177, 0.98);
+    color: white;
+    padding: 12px 12px;
+    margin: 14px 0 8px 2%;
+    display: inline-block;
+    border: none;
+    border-radius: 6px;
+    box-shadow: inset 0 1px 3px #a7a7a7;
+}

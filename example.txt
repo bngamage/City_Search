@@ -1,0 +1,4 @@
+Football	3
+foobar	1
+Footsal	2
+Foot Barca	1
