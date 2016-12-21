@@ -7,8 +7,11 @@ And when user select a city and then click go, it will display the city in googl
 To run the project, please download the code and navigate to the folder in terminal and then run the following commands.
 
 1) javac SearchServerMain.java
+
 2) jar cmvf META-INF/MANIFEST.MF SearchServerMain.jar *
+
 3) make PORT=3311 FILE=cities2.txt start
+
 
 (Reuirements for the project: Java and make should be installed in the host machine)
 
