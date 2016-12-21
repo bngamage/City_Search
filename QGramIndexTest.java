@@ -1,6 +1,6 @@
 // Copyright 2016, University of Freiburg,
 // Chair of Algorithms and Data Structures.
-// Authors: Hannah Bast <bast@cs.uni-freiburg.de>,
+// Authors: Hannah Bast <bast@cs.uni-freiburg.de>, Bhashitha Gamage <gamage25@gmail.com>
 
 import org.junit.Test;
 import org.junit.Assert;

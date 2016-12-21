@@ -1,6 +1,6 @@
 //Copyright 2016, University of Freiburg,
 //Chair of Algorithms and Data Structures.
-//Author: Hannah Bast <bast@cs.uni-freiburg.de>.
+//Author: Hannah Bast <bast@cs.uni-freiburg.de>, Bhashitha Gamage <gamage25@gmail.com>
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -22,10 +22,7 @@ public class SearchServerMain {
 
   public static void main(String[] args) throws IOException {
 
-    //args = new String[2];
-    //args[0] = "/Users/admin/Downloads/cities2.txt";
-    //args[1] = "2222";
-
+    
     // Parse the command line arguments.
     if (args.length < 2) {
       System.out.println("Usage: java -jar SearchServerMain.jar <file> <port>");
@@ -110,10 +107,7 @@ public class SearchServerMain {
 
           contentBytes = qgi.findMatches(query, delta).getBytes("UTF-8");
 
-          // contentString ="";
         }
-
-        // System.out.println(request);
       }
 
       // sening the client something - not provided in the wiki sample code
@@ -124,23 +118,16 @@ public class SearchServerMain {
       response.append("Content-Length: " + contentBytes.length + "\r\n");
       response.append("Content-Type: " + contentType + "\r\n");
       response.append("\r\n");
-      // response.append(contentBytes);
-
-      // String response = contentString;
-      // convert string into a byte stream., and then write.
       output.write(response.toString().getBytes("UTF-8"));
       output.write(contentBytes);
-      // output.close();
-
+      
       BufferedWriter responseWriter =
         new BufferedWriter(new OutputStreamWriter(client.getOutputStream()));
       responseWriter.write("\n Go away!\n");
       responseWriter.flush();
       responseWriter.close();
 
-      // input.close();
-      // client.close();
-    }
+      }
   }
 
   public static String urlDecode(String encoded) {

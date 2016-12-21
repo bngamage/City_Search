@@ -1,6 +1,6 @@
 // Copyright 2016, University of Freiburg,
 // Chair of Algorithms and Data Structures.
-// Authors: Hannah Bast <bast@cs.uni-freiburg.de>,
+// Authors: Hannah Bast <bast@cs.uni-freiburg.de>, Bhashitha Gamage<gamage25@gmail.com>
 
 import java.io.FileReader;
 import java.io.BufferedReader;
@@ -172,9 +172,7 @@ public class QGramIndex {
     // get PED of candidate docemnts.
     ArrayList<Document> results = new ArrayList<Document>();
     for (Entry<Integer, Integer> entry : mergedInvertedList.entrySet()) {
-      // System.out.println(
-      // " " + entry.getKey().toString() + " " + entry.getValue().toString());
-
+      
       int ped = checkPrefixEditDistance(query,
         normalizeString(words.get(entry.getKey())), delta);
 
@@ -186,14 +184,7 @@ public class QGramIndex {
       }
     }
 
-    // printing the results.
-    // for (int i = 0; i < results.size(); i++) {
-    // System.out.println(" " + results.get(i).id + " " + results.get(i).ped
-    // + " " + results.get(i).score);
-    // }
-
-    // System.out.println(results);
-
+    
     // sorting result, first by PED and then by score.
     results = sortResults(results);
     String jsonFormattedResponse;
@@ -207,10 +198,7 @@ public class QGramIndex {
 
       for (int i = 0; i < maximumResults; i++) {
 
-        // if (i == 5) {
-        // break;
-
-        // }
+        
         jsonFormattedResponse += "{\"city\":" + "\""
           + jsonStringEscape(words.get(results.get(i).id)) + "\",";
         jsonFormattedResponse += "\"score\":" + results.get(i).score + ",";
